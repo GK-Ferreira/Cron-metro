@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0e0b40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.box {
+  border: 1px solid #fff;
+  max-width: 600px;
+  width: 100%;
+  height: 200px;
+  transform: skew(-7deg);
+  box-shadow: 8px 6px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.box span {
+  font-size: 50px;
+}
+#milliseconds {
+  font-size: 38px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#resumebtn {
+  display: none;
+}
+#stopbtn {
+  display: none;
+}
+#restartbtn {
+  display: none;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.buttons button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out !important;
+}
+.buttons button:hover {
+  border: 1px solid #fff !important;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+}
